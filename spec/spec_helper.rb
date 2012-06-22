@@ -28,6 +28,7 @@ end
 # common use decorators
 class DecoratedComponentDecorator
   include Decore
+  include Decore::Helpers
 
   def full_name
     [component.first_name, component.last_name].join(' ')

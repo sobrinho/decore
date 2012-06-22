@@ -1,4 +1,5 @@
 module Decore
+  autoload :Helpers, 'decore/helpers'
   autoload :Infection, 'decore/infection'
   autoload :Proxy, 'decore/proxy'
 
