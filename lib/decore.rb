@@ -1,3 +1,11 @@
 module Decore
-  # Your code goes here...
+  autoload :Infection, 'decore/infection'
+
+  def initialize(component)
+    @component = component
+  end
+
+  def component
+    @component
+  end
 end
