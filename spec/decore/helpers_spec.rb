@@ -10,6 +10,6 @@ describe Decore::Helpers do
   end
 
   it 'provides access to rails helpers' do
-    decorator.should respond_to :helpers
+    decorator.helpers.should eq 'rails helpers'
   end
 end

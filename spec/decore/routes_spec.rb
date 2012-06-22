@@ -10,6 +10,6 @@ describe Decore::Routes do
   end
 
   it 'provides access to rails routes' do
-    decorator.should respond_to :routes
+    decorator.routes.should eq 'rails routes'
   end
 end

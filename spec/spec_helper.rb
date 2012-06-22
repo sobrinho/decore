@@ -44,3 +44,21 @@ class DecoratedComponentProxyDecorator
     [first_name, last_name].join(' ')
   end
 end
+
+# We do not really need rails loaded to test integration with
+# helpers and routes since this api is stable on rails.
+module Rails
+  def self.application
+    @application ||= Application.new
+  end
+
+  class Application
+    def routes
+      'rails routes'
+    end
+
+    def helpers
+      'rails helpers'
+    end
+  end
+end
