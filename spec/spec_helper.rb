@@ -29,6 +29,7 @@ end
 class DecoratedComponentDecorator
   include Decore
   include Decore::Helpers
+  include Decore::Routes
 
   def full_name
     [component.first_name, component.last_name].join(' ')
