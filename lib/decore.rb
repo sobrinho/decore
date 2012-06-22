@@ -1,5 +1,6 @@
 module Decore
   autoload :Infection, 'decore/infection'
+  autoload :Proxy, 'decore/proxy'
 
   def initialize(component)
     @component = component
