@@ -1,6 +1,3 @@
-# -*- encoding: utf-8 -*-
-require File.expand_path('../lib/decore/version', __FILE__)
-
 Gem::Specification.new do |gem|
   gem.authors       = ["Gabriel Sobrinho"]
   gem.email         = ["gabriel.sobrinho@gmail.com"]
@@ -13,5 +10,5 @@ Gem::Specification.new do |gem|
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.name          = "decore"
   gem.require_paths = ["lib"]
-  gem.version       = Decore::VERSION
+  gem.version       = "0.1.0"
 end
