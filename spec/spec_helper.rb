@@ -53,7 +53,7 @@ module Rails
   end
 
   class Application
-    def routes
+    def routes_url_helpers
       'rails routes'
     end
 
