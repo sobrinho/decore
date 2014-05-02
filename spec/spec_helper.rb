@@ -11,10 +11,12 @@ require 'decore'
 # common use components
 class UndecoratedComponent
   include Decore::Infection
+  extend Decore::Infection
 end
 
 class DecoratedComponent
   include Decore::Infection
+  extend Decore::Infection
 
   def first_name
     'Gabriel'
